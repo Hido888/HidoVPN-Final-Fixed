@@ -199,7 +199,7 @@ class AppTheme {
         prefixIconColor: AppColors.lightTextSecondary,
         suffixIconColor: AppColors.lightTextSecondary,
       ),
-      cardTheme: CardTheme(
+      cardTheme: const CardThemeData(
         color: AppColors.lightCard,
         elevation: 0,
         shape: RoundedRectangleBorder(
@@ -344,7 +344,7 @@ class AppTheme {
         prefixIconColor: AppColors.textSecondary,
         suffixIconColor: AppColors.textSecondary,
       ),
-      cardTheme: CardTheme(
+      cardTheme: const CardThemeData(
         color: AppColors.card,
         elevation: 0,
         shape: RoundedRectangleBorder(
