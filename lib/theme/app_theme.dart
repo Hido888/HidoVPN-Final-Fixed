@@ -199,7 +199,7 @@ class AppTheme {
         prefixIconColor: AppColors.lightTextSecondary,
         suffixIconColor: AppColors.lightTextSecondary,
       ),
-      cardTheme: const CardThemeData(
+      cardTheme: CardThemeData(
         color: AppColors.lightCard,
         elevation: 0,
         shape: RoundedRectangleBorder(
@@ -207,7 +207,7 @@ class AppTheme {
           side: const BorderSide(color: AppColors.lightCardBorder),
         ),
       ),
-      dialogTheme: const DialogThemeData(
+      dialogTheme: DialogThemeData(
         backgroundColor: AppColors.lightCard,
         titleTextStyle: const TextStyle(
           color: AppColors.lightTextPrimary,
@@ -344,7 +344,7 @@ class AppTheme {
         prefixIconColor: AppColors.textSecondary,
         suffixIconColor: AppColors.textSecondary,
       ),
-      cardTheme: const CardThemeData(
+      cardTheme: CardThemeData(
         color: AppColors.card,
         elevation: 0,
         shape: RoundedRectangleBorder(
@@ -352,7 +352,7 @@ class AppTheme {
           side: const BorderSide(color: AppColors.cardBorder),
         ),
       ),
-      dialogTheme: const DialogThemeData(
+      dialogTheme: DialogThemeData(
         backgroundColor: AppColors.card,
         titleTextStyle: const TextStyle(
           color: AppColors.textPrimary,
