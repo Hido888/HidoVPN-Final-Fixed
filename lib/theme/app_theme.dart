@@ -207,7 +207,7 @@ class AppTheme {
           side: const BorderSide(color: AppColors.lightCardBorder),
         ),
       ),
-      dialogTheme: DialogTheme(
+      dialogTheme: const DialogThemeData(
         backgroundColor: AppColors.lightCard,
         titleTextStyle: const TextStyle(
           color: AppColors.lightTextPrimary,
@@ -352,7 +352,7 @@ class AppTheme {
           side: const BorderSide(color: AppColors.cardBorder),
         ),
       ),
-      dialogTheme: DialogTheme(
+      dialogTheme: const DialogThemeData(
         backgroundColor: AppColors.card,
         titleTextStyle: const TextStyle(
           color: AppColors.textPrimary,

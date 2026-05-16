@@ -1,0 +1,16 @@
+workflows:
+  hidovpn-build:
+    name: HidoVPN Build
+    environment:
+      flutter: stable
+      android_sdk: 34
+    triggering:
+      events:
+        - push
+    scripts:
+      - name: Get Flutter dependencies
+        script: flutter pub get
+      - name: Build APK
+        script: flutter build apk --release
+    artifacts:
+      - build/app/outputs/flutter-apk/app-release.apk
