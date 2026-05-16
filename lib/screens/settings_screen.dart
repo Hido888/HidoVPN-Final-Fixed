@@ -69,6 +69,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   Future<void> _deleteSession(SessionModel session) async {
     final l = AppLocalizations.of(context)!;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (_) => AlertDialog(
@@ -134,6 +135,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context)!;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     final cardColor = isDark ? AppColors.card : AppColors.lightCard;
     final cardBorderColor =
         isDark ? AppColors.cardBorder : AppColors.lightCardBorder;
@@ -287,6 +289,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Widget _buildStatsRow(BuildContext context, Color cardColor,
       Color cardBorderColor, Color textSecondary) {
     final l = AppLocalizations.of(context)!;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Consumer<AuthProvider>(
       builder: (context, auth, _) {
         final user = auth.user;
@@ -371,6 +374,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Widget _buildDevicesSection(BuildContext context, Color cardColor,
       Color cardBorderColor, Color textPrimary, Color textSecondary) {
     final l = AppLocalizations.of(context)!;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -465,6 +469,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Widget _buildVpnSecuritySection(BuildContext context, Color cardColor,
       Color cardBorderColor, Color textPrimary, Color textSecondary) {
     final l = AppLocalizations.of(context)!;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -583,6 +588,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Widget _buildAppearanceSection(BuildContext context, Color cardColor,
       Color cardBorderColor, Color textPrimary, Color textSecondary) {
     final l = AppLocalizations.of(context)!;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -666,6 +672,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Widget _buildAppInfoCard(BuildContext context, Color cardColor,
       Color cardBorderColor, Color textSecondary) {
     final l = AppLocalizations.of(context)!;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -720,6 +727,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       child: ElevatedButton.icon(
         onPressed: () async {
           final l = AppLocalizations.of(context)!;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
           final confirmed = await showDialog<bool>(
             context: context,
             builder: (_) => AlertDialog(
