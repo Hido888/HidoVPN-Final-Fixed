@@ -178,7 +178,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              _buildAccountCard(context, cardColor, cardBorderColor,
+              _buildAccountCard(context, l, cardColor, cardBorderColor,
                   textPrimary, textSecondary),
               const SizedBox(height: 16),
               _buildStatsRow(context, cardColor, cardBorderColor, textSecondary),
@@ -195,7 +195,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               const SizedBox(height: 20),
               _buildAppInfoCard(context, cardColor, cardBorderColor, textSecondary),
               const SizedBox(height: 20),
-              _buildLogoutButton(context),
+              _buildLogoutButton(context, l),
               const SizedBox(height: 24),
             ],
           ),
@@ -204,7 +204,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     );
   }
 
-  Widget _buildAccountCard(BuildContext context, Color cardColor,
+  Widget _buildAccountCard(BuildContext context, AppLocalizations l, Color cardColor,
       Color cardBorderColor, Color textPrimary, Color textSecondary) {
     return Consumer<AuthProvider>(
       builder: (context, auth, _) {
@@ -721,7 +721,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     );
   }
 
-  Widget _buildLogoutButton(BuildContext context) {
+  Widget _buildLogoutButton(BuildContext context, AppLocalizations l) {
     return SizedBox(
       width: double.infinity,
       child: ElevatedButton.icon(
